@@ -1,4 +1,4 @@
-var education = {
+var education_level = {
     "type": "FeatureCollection",
     "features": [
       {
