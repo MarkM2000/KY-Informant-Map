@@ -4,7 +4,7 @@ var age = L.geoJson(age, {
         return L.circleMarker(latlng, {
             color: '#808080',
             weight: 1,
-            fillColor: '#FFFFFF',
+            fillColor: '#FFA500',
             fillOpacity: .8,
             radius: 10
         });
@@ -23,13 +23,13 @@ var age = L.geoJson(age, {
         layer.on('mouseover', function () {
             // code goes in here
             layer.setStyle({
-                fillColor: '#FFFFFF'
+                fillColor: '#FFA500'
             });
         });
         layer.on('mouseout', function () {
             // code goes in here
             layer.setStyle({
-                fillColor: '#FFFFFF'
+                fillColor: '#FFA500'
             });
         });
     }
@@ -40,7 +40,7 @@ var education_level = L.geoJson(education_level, {
         return L.circleMarker(latlng, {
             color: '#808080',
             weight: 1,
-            fillColor: '#FFFFFF',
+            fillColor: '#0D98BA',
             fillOpacity: .8,
             radius: 10
         });
@@ -58,13 +58,13 @@ var education_level = L.geoJson(education_level, {
         layer.on('mouseover', function () {
             // code goes in here
             layer.setStyle({
-                fillColor: '#FFFFFF'
+                fillColor: '#0D98BA'
             });
         });
         layer.on('mouseout', function () {
             // code goes in here
             layer.setStyle({
-                fillColor: '#FFFFFF'
+                fillColor: '#0D98BA'
             });
         });
     }
