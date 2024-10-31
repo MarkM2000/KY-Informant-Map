@@ -75,7 +75,7 @@ var occupation = L.geoJson(occupation, {
         return L.circleMarker(latlng, {
             color: '#808080',
             weight: 1,
-            fillColor: '#FFFFFF',
+            fillColor: '#198754',
             fillOpacity: .8,
             radius: 10
         });
@@ -93,13 +93,13 @@ var occupation = L.geoJson(occupation, {
         layer.on('mouseover', function () {
             // code goes in here
             layer.setStyle({
-                fillColor: '#FFFFFF'
+                fillColor: '#198754'
             });
         });
         layer.on('mouseout', function () {
             // code goes in here
             layer.setStyle({
-                fillColor: '#FFFFFF'
+                fillColor: '#198754'
             });
         });
     }
