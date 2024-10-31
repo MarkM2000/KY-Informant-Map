@@ -34,7 +34,7 @@ var age = L.geoJson(age, {
         });
     }
 })
- 
+
 var education_level = L.geoJson(education_level, {
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, {
