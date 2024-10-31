@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@300;700&display=swap" rel="stylesheet" />
     <!-- Styles CSS -->
     <link href="/css/style.css" rel="stylesheet" />
-    <!-- L Control Layers Tree Layer CSS -->
+    <!-- styledLayerControl CSS -->
+    <link href="/css/styledLayerControl.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,6 +37,8 @@
 <script src="assets/sex.js"></script>
 <!-- Add Variables JS file -->
 <script src="js/variables.js"></script>
+<!-- Add styledLayerControl JS file -->
+<script src="src/styledLayerControl.js"></script>
 <script>
     var map = L.map('map', {
         center: [37, -86],
@@ -46,6 +49,20 @@
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+
+    var baseMaps = [
+					{ 
+						groupName : "Features",
+						expanded : true,
+						layers    : {
+							"Age" :  age,
+							"Education"  :  education_level,
+						}
+					}						
+	];	
+
+    var control = L.Control.styledLayerControl(baseMaps);
+	map.addControl(control);
 </script>
 
 </html>
