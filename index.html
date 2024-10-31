@@ -29,13 +29,13 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <!-- Add Asset JS files -->
-<script src="assets/age.js"></script>    
-<script src="assets/education.js"></script>  
-<script src="assets/ethnicity.js"></script>   
-<script src="assets/occupation.js"></script>   
+<script src="assets/age.js"></script>
+<script src="assets/education.js"></script>
+<script src="assets/ethnicity.js"></script>
+<script src="assets/occupation.js"></script>
 <script src="assets/sex.js"></script>
 <!-- Add Variables JS file -->
-<script src="js/variables.js"></script>      
+<script src="js/variables.js"></script>
 <script>
     var map = L.map('map', {
         center: [37, -86],
@@ -45,6 +45,19 @@
     var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // GeoJSon Layers
+    var sourcesLabels = {
+        "age": age,
+    }
+
+    var sourcesLayers = {
+        "<b style='color:#000000'>Age</b>": age
+    }
+
+    L.control.layers(null, sourcesLayers, {
+        collapsed: false
     }).addTo(map);
 </script>
 
