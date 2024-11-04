@@ -105,7 +105,7 @@ var occupation = L.geoJson(occupation, {
     }
 })
 
-var ethnicity = L.geoJson(ethncity, {
+var ethnicity = L.geoJson(ethnicity, {
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, {
             color: '#808080',
