@@ -126,7 +126,6 @@ div[id^="leaflet-control-accordion-layers"] > label:hover {
 .bt_delete{
     position: relative;
 	float: right;
-	background-image: url(images/delete.png);
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: 0px 0px;
