@@ -23,7 +23,11 @@
     <section>
         <div id="map"></div>
         <h2>About this map</h2>
-        <!-- paragraph and list elements here -->
+        <p></p>
+        <ul>
+            <li>Authored by Mark Marji</a></li>
+            <li>Date of authored map: October 30, 2024</li>
+        </ul>
     </section>
 </body>
 <!-- Add Leaflet JS -->
@@ -52,21 +56,21 @@
     }).addTo(map);
 
     var baseMaps = [
-					{ 
-						groupName : "Features",
-						expanded : true,
-						layers    : {
-                            "Informant": informant,
-							"Age" :  age,
-							"Education"  :  education_level,
-                            "Ocucpation": occupation,
-                            "Ethnicity": ethnicity
-						}
-					}						
-	];	
+        {
+            groupName: "Features",
+            expanded: true,
+            layers: {
+                "Informant": informant,
+                "Age": age,
+                "Education": education_level,
+                "Ocucpation": occupation,
+                "Ethnicity": ethnicity
+            }
+        }
+    ];
 
     var control = L.Control.styledLayerControl(baseMaps);
-	map.addControl(control);
+    map.addControl(control);
 </script>
 
 </html>
